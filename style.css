@@ -1,0 +1,120 @@
+body {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	margin: 0;
+}
+
+.bigcolumn {
+	height: 100%;
+	width: 40%;
+	display: flex;
+}
+
+.smallcolumn {
+	height: 100%;
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.challengeone {
+	height: 100%;
+	width: calc(100%/3);
+	display: block;
+}
+
+.finals {
+	height: 100%;
+	width: calc(100%/3);
+	display: block;
+}
+
+.box1 {
+	width: 100%;
+	height: calc(100%/4);
+	display: flex;
+	text-align: center;
+}
+
+.box2 {
+	height: calc(100%/2);
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.grayscale {
+	filter: grayscale(100%);
+}
+
+.semifinal {content: url("images/semifinals.png");}
+.semifinal2 {content: url("images/semifinals2.png");}
+.final {content: url("images/finals.png");}
+.final2 {content: url("images/finals2.png");}
+.winner {content: url("images/winner.png");}
+.maroon {background-color: #800000;}
+
+img {
+	height: 100%;
+	width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+	body {
+		display:block;
+	}
+	.bigcolumn {
+		height: 60%;
+		width: 100%;
+	}
+	.smallcolumn {
+		height: 30%;
+		width: 100%;
+		display: flex;
+	}
+	.challengeone {
+		width: 20%;
+	}
+	.finals {
+		width: 40%;
+	}
+	.semifinal {
+		content: url("images/semifinalsc.jpg");
+		height: 50%;
+	}
+	.semifinal2 {
+		content: url("images/semifinalsc.jpg");
+		height: 50%;
+	}
+	.winner {width:70%;}
+}
+
+@media only screen and (max-width: 500px) {
+	.bigcolumn {
+		display: block;
+	}
+	.challengeone {
+		height: 25%;
+		width: 100%;
+		display: flex;
+	}
+	.finals {
+		height: calc(75%/2);
+		width: 100%;
+		display: flex;
+	}
+	.box1 {
+		height: 100%;
+		width: calc(100%/4)
+	}
+	.box2 {
+		height: 100%;
+		width: 50%
+	}
+	.final {content: url("images/finalsc.png");}
+	.final2 {content: url("images/finalsc.png");}
+}
+
